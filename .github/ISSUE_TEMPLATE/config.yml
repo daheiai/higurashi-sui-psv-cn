@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 官网与下载
+    url: https://hanchan.daheiai.com/#downloads
+    about: V0.1 / V0.2 下载地址、版本说明与安装教程
+  - name: 攻略 Wiki（粹）
+    url: https://hanchan.daheiai.com/wiki-cui/
+    about: 篇章顺序、路线与攻略
+  - name: Switch《奉》汉化补丁
+    url: https://github.com/daheiai/higurashi-hou-switch-cn
+    about: 姊妹项目，Switch 版补丁，与本补丁互不通用

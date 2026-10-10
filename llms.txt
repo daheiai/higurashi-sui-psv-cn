@@ -1,0 +1,107 @@
+# 多金喵喵汉化组 · 《寒蝉鸣泣之时 粹》PSV 中文汉化补丁（测试版）
+
+> 《寒蝉鸣泣之时 粹》(ひぐらしのなく頃に粋, PlayStation Vita) 的简体中文汉化补丁，以 rePatch / Mod 形式加载，不改动游戏本体。当前为测试版。官网：https://hanchan.daheiai.com/
+
+## 核心信息
+
+- 组织：多金喵喵汉化组（个人汉化组，AI 辅助制作）
+- 游戏：PlayStation Vita《寒蝉鸣泣之时 粹》，编号（Title ID）PCSG00517
+- 当前版本：V0.2 测试版（2026-10-09，PSV 实体机专用，走 rePatch，不替换 eboot.bin）
+- 另有 V0.1 测试版（2026-10-07，Vita3K 模拟器专用，含配套 eboot.bin 与 sce_module）
+- 运行平台：Vita3K 模拟器；已破解 PSV 实体机 + rePatch 插件 3.0.1 及以上
+- 语言：简体中文；费用：免费
+- 攻略 Wiki：https://hanchan.daheiai.com/wiki-cui/
+- 注意：两版不能混用（模拟器用 V0.1，实体机用 V0.2）；本版为测试版，不宣称全游戏无漏译
+
+## 下载
+
+- V0.2 测试版（实体机）直链：https://dl.daheiai.com/hanchan-cui/v0.2/Higurashi_Sui_PSV_CN_V0.2_Hardware_Test_20261009.zip
+- V0.2 测试版 百度网盘：https://pan.baidu.com/s/11m4BHV1w2ZznXcxP-5Hx1Q?pwd=463m
+- V0.1 测试版（模拟器）直链：https://dl.daheiai.com/hanchan-cui/v0.1/Higurashi_Sui_PSV_CN_V0.1_Test_20261007.zip
+- V0.1 测试版 百度网盘：https://pan.baidu.com/s/1uncxzn34XUBC2r4scNpqPA?pwd=3kz1
+- V0.1 测试版 夸克网盘：https://pan.quark.cn/s/74d7a963d8fd
+- V0.1 测试版 115网盘：https://115cdn.com/s/swsjv0g3hdq?password=ce64
+- 历史版本目录：https://dl.daheiai.com/hanchan-cui/<版本号全小写>/
+
+## 安装：实体机（rePatch，对应 V0.2 测试版）
+
+适用于已破解 PSV：正版卡带 / 官方下载版 / NoNpDrm。V0.1 仅供模拟器使用。
+
+1. 先确认原版游戏可以正常启动，完全退出游戏；先备份存档和旧补丁。
+2. 安装 rePatch：把 repatch.skprx 放到 ur0:tai/，在 ur0:tai/config.txt 的 *KERNEL 下另起一行写 ur0:tai/repatch.skprx，保存后重启主机。用自动插件2 安装也可以。请用 rePatch 3.0.1 或更新版本；作者测试 3.0 时，卡带不会加载 rePatch 目录里的 eboot.bin。
+3. 若装过 V0.1 或其他测试包，先把整个 ux0:rePatch/PCSG00517/ 旧目录移出备份或备份后删除，不能直接覆盖，否则旧 eboot.bin 可能残留并导致崩溃。
+4. 用 VitaShell 把补丁包里的 rePatch/PCSG00517/ 复制到 ux0:rePatch/，最终路径必须为 ux0:rePatch/PCSG00517/patch.rom；该目录内应只有本包 patch.rom，不要混入旧 eboot.bin 或 sce_module。
+5. 启动游戏，出现中文补丁说明画面即表示资源补丁已加载。
+
+注意：不要放入 sce_sys，不要覆盖或删除原版 data.rom、原版 eboot.bin。本包不提供 eboot.bin，因此不包含修改版 EBOOT 中的系统提示、答题选项等译文，相关位置可能仍显示日文。
+
+卸载：完全退出游戏后删除 ux0:rePatch/PCSG00517/ 即可恢复原版；原游戏文件没有被修改。
+
+## 安装：模拟器（Vita3K，对应 V0.1 测试版）
+
+适用于 PSV《寒蝉鸣泣之时 粹》（PCSG00517）。请下载 V0.1 测试版。
+
+1. 解压下载的补丁包。
+2. 确认原版游戏可以正常运行，然后完全退出 Vita3K。
+3. 打开 Vita3K 数据目录，进入 ux0/app/PCSG00517/，确认里面有 data.rom 和 eboot.bin。
+4. 备份原文件，将补丁包里的 patch.rom 和配套 eboot.bin 复制进去，同名文件选择覆盖；sce_module 文件夹合并，不要删除原文件夹。不要删除 data.rom，也不要放进存档目录。
+5. 启动游戏，看到中文汉化说明画面即表示补丁已加载。
+
+注意：patch.rom、配套 eboot.bin 与 sce_module/stero1d.suprx 三项必须配套使用。本包基于开发者已验证的 PCSG00517 转储制作，其他转储与实体机不在本次验证范围内。回滚时恢复安装前备份的文件；原来没有 patch.rom 时把它移走即可，不要删除存档。
+
+## 常见问题（FAQ）
+
+### 这个汉化补丁是什么？
+
+《寒蝉鸣泣之时 粹》（PlayStation Vita）的简体中文汉化补丁测试版，由多金喵喵汉化组制作。它通过 rePatch / Mod 方式加载，不修改游戏本体，完全免费发布。
+
+### 支持哪个游戏和平台？
+
+游戏编号 PCSG00517。支持 Vita3K 模拟器与已破解的 PSV 实体机。PS3 版与其他编号的转储不在本次发布范围内。
+
+### V0.1 和 V0.2 有什么区别？该下哪个？
+
+V0.1 测试版是模拟器专用，包含 patch.rom、配套 eboot.bin 与 sce_module；V0.2 测试版是实体机专用，只提供 patch.rom，通过 rePatch 加载。按运行环境选一个，两版不能混用。
+
+### 实体机需要什么前置条件？
+
+已破解的 PSV，并安装、启用 rePatch 插件（安装后需重启主机），建议 rePatch 3.0.1 或更新版本。正版卡带、官方下载版与 NoNpDrm 都可以。
+
+### 安装补丁会覆盖存档或游戏本体吗？
+
+不会。补丁不包含存档，也不要求覆盖存档；原版 data.rom、原版 eboot.bin 都不会被修改。卸载时删除 ux0:rePatch/PCSG00517/ 即可恢复原版。
+
+### 装完还有日文／部分界面没汉化，正常吗？
+
+正常。V0.2 不包含修改版 EBOOT 中的系统提示、答题选项等译文，这些位置可能仍显示日文；片尾真实制作人员姓名、公司名称与标志保留原文。本系列是测试版，不宣称全游戏无漏译。
+
+### 装过 V0.1 还能再装 V0.2 吗？
+
+实体机上必须先清理：把整个 ux0:rePatch/PCSG00517/ 旧目录移出备份或备份后删除，不能直接覆盖，否则残留的旧 eboot.bin 可能导致崩溃。
+
+### 游戏起不来或崩溃怎么办？
+
+检查是否用对了版本（实体机 V0.2、模拟器 V0.1）、rePatch 是否启用且版本 ≥ 3.0.1、ux0:rePatch/PCSG00517/ 内是否混入旧文件（应只有 patch.rom）、模拟器侧三项文件是否配套。若崩溃，请保留 ux0:data/ 下对应的新 psp2core-*.psp2dmp 文件。
+
+### 怎么卸载或回退补丁？
+
+实体机删除 ux0:rePatch/PCSG00517/ 整个文件夹；模拟器恢复安装前备份的文件。不要删除存档。
+
+### 汉化质量如何？是完整汉化吗？
+
+剧本、选项、系统文字、字体与图片等已制作的汉化资源都在包里；但本系列是测试版，全路线通关、存读档、答题与其他功能尚未完成全面验证。模拟器的验证结果不能替代实体机验证。
+
+### 补丁免费吗？和 07th Expansion、Entergram 有关系吗？
+
+完全免费，禁止商用与倒卖。补丁与 07th Expansion、Entergram 没有任何关联，请购买正版游戏支持原作。
+
+## 相关链接
+
+- 官网：https://hanchan.daheiai.com/
+- 《粹》攻略 Wiki：https://hanchan.daheiai.com/wiki-cui/
+- 姊妹项目（Switch《寒蝉鸣泣之时奉》汉化补丁）：https://github.com/daheiai/higurashi-hou-switch-cn
+- 作者主页：https://daheiai.com/
+
+## 免责声明
+
+本补丁仅供学习交流使用，请购买正版游戏。与 07th Expansion、Entergram 无任何关联。

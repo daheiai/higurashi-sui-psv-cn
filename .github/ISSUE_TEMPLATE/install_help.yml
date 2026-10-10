@@ -1,0 +1,55 @@
+name: 安装求助
+description: 安装遇到问题、游戏起不来、补丁不生效
+title: "[安装] "
+labels: ["installation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        安装前请先看 [实体机安装指南](../blob/main/docs/install-console.md) 或 [模拟器安装指南](../blob/main/docs/install-vita3k.md)。
+
+        ⚠️ 先确认版本选对：**实体机用 V0.2，模拟器用 V0.1**，两版不能混用。
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 运行环境
+      options:
+        - Vita3K 模拟器
+        - PSV 实体机（rePatch）
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 主机系统 / 模拟器 / rePatch 版本
+      placeholder: 例如 PSV 3.65 + rePatch 3.0.1；或 Vita3K 0.1.9
+    validations:
+      required: true
+  - type: input
+    id: patch-version
+    attributes:
+      label: 补丁版本与游戏编号
+      placeholder: 例如 V0.2 测试版 / PCSG00517
+    validations:
+      required: true
+  - type: input
+    id: layout
+    attributes:
+      label: 补丁文件放到了哪里
+      placeholder: 例如 ux0:rePatch/PCSG00517/patch.rom（实体机）；ux0/app/PCSG00517/（模拟器）
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 你已经做过的步骤
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: 具体现象 / 报错
+      description: 若崩溃请附 ux0:data/ 下新的 psp2core-*.psp2dmp
+    validations:
+      required: true
