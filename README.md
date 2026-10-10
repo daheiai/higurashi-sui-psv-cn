@@ -4,7 +4,7 @@
 
 **Higurashi no Naku Koro ni Sui — PlayStation Vita Simplified Chinese Patch**
 
-[![官网](https://img.shields.io/badge/%E5%AE%98%E7%BD%91-hanchan.daheiai.com-FF6B00)](https://hanchan.daheiai.com/wiki-cui/)
+[![官网](https://img.shields.io/badge/%E5%AE%98%E7%BD%91-hanchan.daheiai.com-FF6B00)](https://hanchan.daheiai.com/)
 [![版本](https://img.shields.io/badge/%E7%89%88%E6%9C%AC-V0.1%20%2F%20V0.2%20%E6%B5%8B%E8%AF%95%E7%89%88-1A1A1A)](https://hanchan.daheiai.com/#downloads)
 [![平台](https://img.shields.io/badge/%E5%B9%B3%E5%8F%B0-PSV%20%C2%B7%20Vita3K%20%C2%B7%20rePatch-666666)](docs/install-console.md)
 [![免费](https://img.shields.io/badge/%E8%B4%B9%E7%94%A8-%E5%85%8D%E8%B4%B9-16a34a)](https://hanchan.daheiai.com/#downloads)
